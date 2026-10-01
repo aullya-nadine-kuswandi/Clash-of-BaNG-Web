@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of Bang - Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">CLASH OF BANG</div>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="home.html" class="nav-link">HOME</a></li>
+                    <li><a href="gallery.html" class="nav-link active">GALLERY</a></li>
+                    <li><a href="troops.html" class="nav-link">TROOPS</a></li>
+                    <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                    <li><a href="register.html" class="nav-link">REGISTER</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="gallery-main-content">
+        <div class="container">
+            
+            <div class="gallery-header-box">
+                <h2>THE <span class="gold-text">GALLERY</span></h2>
+                <p class="subtitle">Discover legendary heroes, elite troop tactics, and breathtaking fan art straight from the Clash of BaNG universe.</p>
+            </div>
+
+            <div class="gallery-filter-menu">
+                <button class="filter-btn active" data-filter="all">All Content</button>
+                <button class="filter-btn" data-filter="heroes">Heroes</button>
+                <button class="filter-btn" data-filter="troops">Troops</button>
+                <button class="filter-btn" data-filter="fanart">Fan Art</button>
+            </div>
+
+            <div class="gallery-grid-wrapper">
+                
+                <div class="gallery-card-item wide" data-category="fanart">
+                    <div class="gallery-card-body">
+                        <img src="../assets/fan-art2.png" alt="Obsidian Forest" class="gallery-img-asset">
+                        <div class="gallery-card-info">
+                            <span class="badge-tag label-fanart">Fan Art</span>
+                            <h3>Obsidian Forest</h3>
+                            <p>A dark, crystalline woodland where shadows and ancient stone converge.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card-item" data-category="troops">
+                    <div class="gallery-card-body">
+                        <img src="../assets/gallery-troop1.png" alt="Shadow Archer" class="gallery-img-asset">
+                        <div class="gallery-card-info">
+                            <span class="badge-tag label-troops">Troop</span>
+                            <h3>Shadow Archer</h3>
+                            <p>Deadly guardians stalking from shadows.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card-item" data-category="fanart">
+                    <div class="gallery-card-body">
+                        <img src="../assets/fan-art1.png" alt="Arcane Surge" class="gallery-img-asset">
+                        <div class="gallery-card-info">
+                            <span class="badge-tag label-fanart">Fan Art</span>
+                            <h3>Arcane Surge</h3>
+                            <p>Unleashing a vortex of raw magic.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card-item wide" data-category="heroes">
+                    <div class="gallery-card-body">
+                        <img src="../assets/gallery-hero1.png" alt="Xylos" class="gallery-img-asset">
+                        <div class="gallery-card-info">
+                            <span class="badge-tag label-heroes">Hero</span>
+                            <h3>Xylos the Unbroken</h3>
+                            <p>The warrior who stared into the void and didn't blink.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card-item" data-category="heroes">
+                    <div class="gallery-card-body">
+                        <img src="../assets/gallery-hero2.png" alt="The Sorceress" class="gallery-img-asset">
+                        <div class="gallery-card-info">
+                            <span class="badge-tag label-heroes">Hero</span>
+                            <h3>The Sorceress</h3>
+                            <p>A wielder of forbidden shadow magic.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card-item" data-category="troops">
+                    <div class="gallery-card-body">
+                        <img src="../assets/gallery-troop2.png" alt="Twilight Golem" class="gallery-img-asset">
+                        <div class="gallery-card-info">
+                            <span class="badge-tag label-troops">Troop</span>
+                            <h3>Twilight Golem</h3>
+                            <p>Void giant fueled by shadow power.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="gallery-card-item" data-category="fanart">
+                    <div class="gallery-card-body">
+                        <img src="../assets/fan-art3.png" alt="Catalyst Breach" class="gallery-img-asset">
+                        <div class="gallery-card-info">
+                            <span class="badge-tag label-fanart">Fan Art</span>
+                            <h3>The Catalyst Breach</h3>
+                            <p>A violent surge of raw, dimensional energy.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column brand-info">
+                    <h3 class="footer-logo">CLASH OF BANG</h3>
+                    <p class="footer-desc">The world's premier fan community dedicated to the evolution of the legion and elite strategy.</p>
+                </div>
+
+                <div class="footer-column quick-links-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <div class="links-row">
+                        <a href="home.html">Home</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="troops.html">Troops</a>
+                        <a href="about.html">About</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                </div>
+
+                <div class="footer-column social-media-col">
+                    <h4 class="footer-heading">Our Social Media</h4>
+                    <div class="social-icons">
+                        <a href="https://discord.com/" class="social-icon-wrapper"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon-wrapper"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/en/" class="social-icon-wrapper"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://x.com/" class="social-icon-wrapper"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/" class="social-icon-wrapper"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Clash of BaNG. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of Bang - Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">CLASH OF BANG</div>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="home.html" class="nav-link">HOME</a></li>
+                    <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
+                    <li><a href="troops.html" class="nav-link">TROOPS</a></li>
+                    <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                    <li><a href="register.html" class="nav-link active">REGISTER</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="register-main">
+        <div class="container">
+            <div class="register-wrapper">
+                
+                <div class="register-left-col">
+                    <h2>JOIN THE <span class="highlight-text">LEGION</span></h2>
+                    <p class="subtitle">Register now to claim your spot in the world’s premier fan community. Unlock elite strategies, connect with regional hubs, and start building your legacy alongside fellow strategists.</p>
+                </div>
+
+                <div class="register-right-col">
+                    <div class="register-box">
+                        <form id="registrationForm" novalidate>
+                            
+                            <div class="form-group">
+                                <label for="fullName">FULL NAME <span class="required-star">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" id="fullName" placeholder="Enter your full name">
+                                </div>
+                                <div class="error-msg" id="fullNameError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">EMAIL ADDRESS <span class="required-star">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="text" id="email" placeholder="Enter your email address">
+                                </div>
+                                <div class="error-msg" id="emailError"></div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="age">AGE <span class="required-star">*</span></label>
+                                    <input type="number" id="age" placeholder="Enter your age">
+                                    <div class="error-msg" id="ageError"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>GENDER <span class="required-star">*</span></label>
+                                    <div class="radio-group">
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" value="Male"> MALE
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" value="Female"> FEMALE
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" value="Other"> OTHER
+                                        </label>
+                                    </div>
+                                    <div class="error-msg" id="genderError"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="favTroop">FAVORITE TROOP <span class="required-star">*</span></label>
+                                <div class="select-wrapper">
+                                    <select id="favTroop" required onchange="this.blur()">
+                                        <option value="" disabled selected>Select your favorite troop</option>
+                                        <option value="Obsidian Knight">Obsidian Knight</option>
+                                        <option value="Twilight Golem">Twilight Golem</option>
+                                        <option value="Mystic Shaman">Mystic Shaman</option>
+                                        <option value="Void Assassin">Void Assassin</option>
+                                        <option value="Shadow Archer">Shadow Archer</option>
+                                        <option value="Night Dragon">Night Dragon</option>
+                                    </select>
+                                    <i class="fa-solid fa-chevron-down select-icon"></i>
+                                </div>
+                                <div class="error-msg" id="favTroopError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="textarea-header">
+                                    <label for="reason">REASON TO JOIN <span class="required-star">*</span></label>
+                                    <span class="char-counter"><span id="charCount">0</span>/500 characters</span>
+                                </div>
+                                <textarea id="reason" rows="4" placeholder="Tell us why you want to join Clash of BaNG"></textarea>
+                                <div class="error-msg" id="reasonError"></div>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label for="terms" class="checkbox-label">
+                                    <input type="checkbox" id="terms"> I agree to the <span class="gold-link">Terms & Conditions</span> and <span class="gold-link">Privacy Policy</span>
+                                </label>
+                                <div class="error-msg" id="termsError"></div>
+                            </div>
+
+                            <button type="submit" class="submit-btn">SUBMIT REGISTRATION</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="successModal" class="modal-overlay">
+        <div class="modal-box">
+            <button id="closeXBtn" class="modal-x-btn" aria-label="Close modal">&times;</button>
+
+            <h3>Registration Successful!</h3>
+            <div class="success-icon-circle">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <p>Thank you for registering. Welcome to our legion.</p>
+            
+            <a href="home.html" class="modal-home-btn">BACK TO HOME</a>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column brand-info">
+                    <h3 class="footer-logo">CLASH OF BANG</h3>
+                    <p class="footer-desc">The world's premier fan community dedicated to the evolution of the legion and elite strategy.</p>
+                </div>
+
+                <div class="footer-column quick-links-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <div class="links-row">
+                        <a href="home.html">Home</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="troops.html">Troops</a>
+                        <a href="about.html">About</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                </div>
+
+                <div class="footer-column social-media-col">
+                    <h4 class="footer-heading">Our Social Media</h4>
+                    <div class="social-icons">
+                        <a href="https://discord.com/" class="social-icon-wrapper"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon-wrapper"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/en/" class="social-icon-wrapper"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://x.com/" class="social-icon-wrapper"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/" class="social-icon-wrapper"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Clash of BaNG. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>
+

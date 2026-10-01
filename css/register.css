@@ -1,0 +1,557 @@
+.register-main {
+    display: block;
+    width: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.register-wrapper {
+    display: grid;
+    grid-template-columns: 42% 54%;
+    column-gap: 4%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.register-left-col {
+    box-sizing: border-box;
+    align-self: start;
+    margin-top: 145px;
+}
+
+.register-right-col {
+    box-sizing: border-box;
+}
+
+.register-box {
+    display: block;
+    width: 100%;
+    max-width: 630px;
+    margin-left: auto;
+    background: linear-gradient(#121214, #050505);
+    padding: 40px;
+    border-radius: 8px;
+    border: 0.5px solid #625E68;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 30px 0px #1A0B2E;
+}
+
+.register-left-col h2 {
+    font-family: 'Space Grotesk';
+    color: var(--white-title);
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.register-left-col h2 .highlight-text {
+    color: var(--primary-yellow);
+}
+
+.register-left-col .subtitle {
+    font-family: 'Inter';
+    color: var(--white-body);
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    opacity: 0.9;
+}
+
+.form-group {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Space Grotesk';
+    color: var(--white-title);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    letter-spacing: 0.5px;
+}
+
+.input-with-icon {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.register-box .input-with-icon input[type="text"] {
+    padding-left: 48px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    background-color: var(--black-card);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: var(--white-title);
+    font-family: 'Inter';
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.25s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.25s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #4b5563;
+}
+
+.form-group input[type="text"]:not(:focus):hover,
+.form-group input[type="number"]:not(:focus):hover,
+.form-group select:not(:focus):hover,
+.form-group textarea:not(:focus):hover {
+    border-color: rgb(248, 173, 60, 0.5);
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none !important;
+    border-color: var(--primary-yellow) !important;
+    background-color: transparent;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+    width: 100%;
+}
+
+.radio-group {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.register-box .radio-label {
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--white-title);
+    font-family: 'Space Grotesk';
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.register-box .radio-label input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary-yellow);
+    border-radius: 50%;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.register-box .radio-label:hover input[type="radio"] {
+    background-color: rgba(245, 158, 11, 0.5);
+}
+
+.register-box .radio-label input[type="radio"]:checked {
+    background-color: var(--primary-yellow);
+    border-color: var(--primary-yellow);
+}
+
+.select-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.select-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 45px;
+    cursor: pointer;
+}
+
+.select-wrapper .select-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4b5563;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+.select-wrapper select:invalid {
+    color: #4b5563;
+}
+
+.select-wrapper select option {
+    background-color: #121214;
+    color: var(--white-title);
+}
+
+.select-wrapper select option[disabled] {
+    color: #4b5563;
+}
+
+.textarea-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.textarea-header label {
+    margin-bottom: 0;
+}
+
+.char-counter {
+    font-family: 'Inter';
+    color: #555;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 130px;
+}
+
+.form-group:has(textarea) {
+    margin-bottom: 0px;
+}
+
+.checkbox-group {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.register-box .checkbox-label {
+    position: relative;
+    display: inline-block;
+    color: #7f8c8d;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 1.4;
+    padding-left: 26px;
+}
+
+.register-box .checkbox-label input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: var(--black-card);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.register-box .checkbox-label:hover input[type="checkbox"] {
+    border-color: var(--primary-yellow);
+    background-color: rgba(245, 158, 11, 0.25);
+    outline: 2px solid rgba(245, 158, 11, 0.2);
+}
+
+.register-box .checkbox-label input[type="checkbox"]:checked {
+    background-color: var(--primary-yellow);
+    border-color: var(--primary-yellow);
+}
+
+.register-box .checkbox-label input[type="checkbox"]:checked::after {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 10px;
+}
+
+.required-star {
+    color: #ef4444;
+    margin-left: 2px;
+}
+
+.form-group .error-msg {
+    color: #ef4444;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+    min-height: 18px;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+
+.form-group.error input[type="text"],
+.form-group.invalid-field input[type="text"],
+.form-group.error input[type="number"],
+.form-group.invalid-field input[type="number"],
+.form-group.error select,
+.form-group.invalid-field select,
+.form-group.error textarea,
+.form-group.invalid-field textarea {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.02);
+}
+
+.form-group.invalid-field input:focus,
+.form-group.invalid-field select:focus,
+.form-group.invalid-field textarea:focus {
+    border-color: #f87171;
+    outline: none;
+}
+
+.form-group.error input:not(:focus):hover,
+.form-group.invalid-field input:not(:focus):hover,
+.form-group.error textarea:not(:focus):hover,
+.form-group.invalid-field textarea:not(:focus):hover,
+.form-group.error select:not(:focus):hover,
+.form-group.invalid-field select:not(:focus):hover {
+    border-color: #f87171 !important;
+}
+
+.form-group.shake {
+    animation: shakeEffect 0.6s ease-in-out;
+}
+
+@keyframes shakeEffect {
+    0%, 100% { transform: translateX(0); }
+    15%, 45%, 75% { transform: translateX(-6px); }
+    30%, 60%, 90% { transform: translateX(6px); }
+}
+
+.gold-link {
+    color: var(--primary-yellow);
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin: 12px auto 0 auto ;
+    padding: 16px;
+    background-color: var(--primary-yellow);
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--hover-yellow);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.modal-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-box {
+    position: relative;
+    background: linear-gradient(#16161a, #0b0b0d);
+    border: 1px solid #625E68;
+    padding: 45px 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 440px;
+    text-align: center;
+    box-shadow: 0px 10px 40px 0px #1A0B2E;
+    transform: scale(0.7);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.modal-overlay.modal-active .modal-box {
+    transform: scale(1);
+}
+
+.modal-x-btn {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #625E68;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    padding: 0;
+}
+
+.modal-x-btn:hover {
+    color: rgb(212, 40, 40);
+}
+
+.success-icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(34, 197, 94, 0.1);
+    border: 2px solid #22c55e;
+    color: #22c55e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 24px auto;
+}
+
+.modal-box h3 {
+    font-family: 'Space Grotesk';
+    color: var(--primary-yellow);
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.modal-box p {
+    font-family: 'Inter';
+    color: var(--white-body);
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    opacity: 0.9;
+}
+
+.modal-home-btn {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+    padding: 12px 24px;
+    background-color: var(--primary-yellow);
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.modal-home-btn:hover {
+    background-color: var(--hover-yellow);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .register-main {
+        padding: 40px 0;
+    }
+
+    .register-wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .register-left-col {
+        box-sizing: border-box;
+        align-self: center;
+        margin-top: 0px;
+    }
+
+    .register-left-col h2{
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .register-left-col .subtitle {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .radio-group {
+        text-align: left;
+        padding: 6px 0 12px 0;
+    }
+
+    .radio-group ~ .error-msg {
+        text-align: left;
+    }
+
+    .textarea-header {
+        grid-template-columns: 1fr auto;
+        text-align: left;
+        row-gap: 0px;
+    }
+
+    .char-counter {
+        text-align: right;
+    }
+
+    .register-box {
+        margin: 0 auto;
+    }
+    
+    .submit-btn {
+        max-width: 100%;
+    }
+}

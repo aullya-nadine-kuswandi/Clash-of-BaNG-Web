@@ -1,0 +1,313 @@
+:root {
+    --bg-main: #06141a;
+    --bg-header-footer: #171616;
+    --white-title: #E5E2E3;
+    --white-body: #CBC3D7;
+    --white-border: rgb(255, 255, 255, 0.1);
+    --gray-text: #9CA3AF;
+    --primary-yellow: rgb(246, 167, 48);
+    --secondary-yellow: #FFBF4E;
+    --hover-yellow: rgb(247, 202, 57);
+    --black-card: #201F1F;
+    --light-purple: #E0B6FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--white-body);
+    font-family: 'Inter';
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 6.5%;
+}
+
+/* Header */
+header {
+    background-color: var(--bg-header-footer); 
+    width: 100%;
+    position: sticky;       
+    top: 0;                 
+    z-index: 1000;
+    border-bottom: 1.2px solid rgba(104, 104, 104, 0.5);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 6.5%; 
+    max-width: 1440px; 
+    margin: 0 auto; 
+}
+
+.logo {
+    font-family: 'Space Grotesk';
+    font-weight: 900;
+    font-size: 27px;
+    color: var(--primary-yellow); 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--gray-text); 
+    font-family: 'Space Grotesk'; 
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 6px; 
+    border-bottom: 2px solid transparent; 
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-yellow);
+} 
+
+.nav-link.active {
+    color: var(--primary-yellow); 
+    border-bottom: 2px solid var(--primary-yellow); 
+}
+
+/* Hamburger Menu untuk Responsivitas */
+.mobile-menu-toggle {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.mobile-menu-toggle .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-yellow);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-header-footer);
+    width: 100%;
+    border-top: 1.2px solid rgba(104, 104, 104, 0.5);
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-content {
+    padding: 50px 6.5% 40px 6.5%;
+    display: grid;
+    grid-template-columns: 35% 30% 35%; 
+    gap: 40px; 
+}
+
+.footer-logo {
+    font-family: 'Space Grotesk';
+    color: var(--primary-yellow);
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.footer-desc {
+    color: var(--white-body);
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: 'Inter';
+}
+
+.footer-heading {
+    font-family: 'Space Grotesk';
+    color: var(--white-title);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.links-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.links-row a {
+    color: var(--white-body);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Inter';
+    transition: color 0.3s ease;
+}
+
+.links-row a:hover {
+    color: var(--primary-yellow);
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    background-color: #262626;
+    color: var(--white-body);
+    text-align: center;
+    line-height: 36px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon-wrapper:hover {
+    background-color: var(--primary-yellow);
+    color: #2F3132;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    background-color: var(--bg-header-footer);
+    text-align: center;
+    padding: 22px 0;
+    border-top: 1px solid #1a1a1a;
+    width: 100%;
+}
+
+.footer-bottom p {
+    color: var(--white-body);
+    font-size: 15px;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 15px 5%;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 22px; 
+    }
+
+    .mobile-menu-toggle {
+        display: flex; 
+    }
+
+    nav {
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-header-footer);
+        border-bottom: 1px solid #222;
+        max-height: 0; 
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        z-index: 99;
+    }
+
+    nav.active {
+        max-height: 350px; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 15px 5%;
+        border-bottom: none;
+        font-size: 14px;
+    }
+
+    .nav-link.active, .nav-link:hover {
+        border-bottom: none;
+        background-color: #111; 
+    }
+
+    .mobile-menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(7.5px) rotate(45deg);
+    }
+    .mobile-menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .mobile-menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-7.5px) rotate(-45deg);
+    }
+
+    .footer-content {
+        padding: 40px 5% 20px 5%;
+        grid-template-columns: 100%; 
+        gap: 30px;
+        text-align: left; 
+    }
+
+    .links-row {
+        display: flex;
+        flex-direction: column;    
+        gap: 12px;                 
+        justify-content: flex-start;
+    }
+
+    .links-row a {
+        display: inline-block;      
+        padding: 4px 0;             
+        width: fit-content; 
+        font-size: 13px;
+    }
+
+    .social-icons {
+        justify-content: flex-start; 
+    }
+
+    .footer-logo {
+        font-size: 23px;
+    }
+
+    .footer-desc {
+        font-size: 13px;
+    }
+
+    .footer-heading {
+        font-family: 'Space Grotesk';
+        color: var(--white-title);
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom p{
+        font-size: 13px;
+    }
+}

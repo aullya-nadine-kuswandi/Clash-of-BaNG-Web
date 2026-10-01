@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of Bang - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">CLASH OF BANG</div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="home.html" class="nav-link active">HOME</a></li>
+                    <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
+                    <li><a href="troops.html" class="nav-link">TROOPS</a></li>
+                    <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                    <li><a href="register.html" class="nav-link">REGISTER</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="home-main-content">
+        
+        <section class="home-hero-banner">
+            <div class="container">
+                <div class="hero-center-box">
+                    <h1>WELCOME TO <span class="gold-text">CLASH OF BANG</span></h1>
+                    <p class="hero-subtitle">The ultimate evolution of the Clash of BaNG legion. Explore our regional hubs, master elite troop guides, and register now to become part of the world's premier fan community.</p>
+                    <div class="hero-buttons">
+                        <a href="register.html" class="btn-gold">JOIN NOW</a>
+                        <a href="troops.html" class="btn-outline">EXPLORE TROOPS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="home-body-content">
+            <div class="container">
+
+                <div class="body-top-divider"></div>
+
+                <section class="about-summary-section">
+                    <div class="summary-text-side">
+                        <h2 class="left-section-title">WHAT IS <span class="gold-text">CLASH OF BANG</span>?</h2>
+                        <p class="desc-p">Established in 2018, Clash of BaNG is the premier destination for players seeking to master the official Clash of BaNG game. With active regional hubs in Jakarta, Bandung, and Sanur, this growing fan community brings the digital experience to life in the real world, connecting players who share the same passion.</p>
+                        <p class="desc-p">Sharpen every skill with beginner-to-pro tutorials or explore a vast library of troop guides and hero tactics. From expert combat blueprints to stunning community art, every tool needed for victory is ready.</p>
+                        
+                        <a href="about.html" class="btn-gold btn-margin">LEARN MORE ABOUT US</a>
+
+                        <div class="stats-counter-grid">
+                            <div class="stat-box">
+                                <span class="stat-number">2,000+</span>
+                                <span class="stat-label">ACTIVE MEMBERS</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">80+</span>
+                                <span class="stat-label">TROOP GUIDES</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">150+</span>
+                                <span class="stat-label">EXCLUSIVE ARTWORKS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-image-side">
+                        <div class="intro-frame">
+                            <img src="../assets/intro-home.png" alt="Clash of Bang Intro" class="intro-preview-img">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="updates-section">
+                    <div class="left-section-title">GAME <span class="gold-text">UPDATES</span></div>
+                    
+                    <div class="carousel-container">
+                        <button class="carousel-nav-btn prev-btn" id="prevSlide" aria-label="Previous Slide">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-nav-btn next-btn" id="nextSlide" aria-label="Next Slide">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                        <div class="carousel-slider-track" id="carouselTrack">
+                            
+                            <div class="carousel-slide-item active">
+                                <img src="../assets/carousel1.png" alt="The Void Incursion Event" class="slide-bg-img1">
+                                <div class="slide-overlay-content">
+                                    <span class="event-badge">Ongoing Event</span>
+                                    <h3>THE VOID INCURSION</h3>
+                                    <p>Secure the powerful Void Crystals before the cosmic eclipse ends.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-slide-item">
+                                <img src="../assets/carousel2.png" alt="Golden Age Siege" class="slide-bg-img2">
+                                <div class="slide-overlay-content">
+                                    <span class="event-badge">Upcoming Battle</span>
+                                    <h3>GOLDEN AGE SIEGE</h3>
+                                    <p>Ascend through the chaos and become a legend of the clash.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-slide-item">
+                                <img src="../assets/carousel3.png" alt="Super Troops Awake" class="slide-bg-img3">
+                                <div class="slide-overlay-content">
+                                    <span class="event-badge">New Hero</span>
+                                    <h3>SHADOW WEAVER</h3>
+                                    <p>Weave lethal illusions and strike unseen from the deep obsidian dark.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-dots-wrapper" id="dotsContainer"></div>
+                    </div>
+                </section>
+
+                <section class="popular-troops-section">
+                    <div class="section-header-inline">
+                        <h2 class="left-section-title">MOST POPULAR <span class="gold-text">TROOPS</span></h2>
+                        <a href="troops.html" class="view-all-link">
+                            VIEW ALL TROOPS <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                    <div class="troops-grid-wrapper">
+                        
+                        <div class="troop-card-home reveal-on-scroll">
+                            <div class="troop-img-box">
+                                <img src="../assets/shadow-archer.png" alt="Shadow Archer" class="troop-avatar">
+                                <div class="card-gradient-shadow"></div>
+                                <div class="troop-card-info-box">
+                                    <span class="tag-troop">ELITE</span>
+                                    <h3>Shadow Archer</h3>
+                                    <p>Striking from the shadows with arrows forged from solar code.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="troop-card-home reveal-on-scroll">
+                            <div class="troop-img-box">
+                                <img src="../assets/twilight-golem.png" alt="Twilight Golem" class="troop-avatar">
+                                <div class="card-gradient-shadow"></div>
+                                <div class="troop-card-info-box">
+                                    <span class="tag-troop">LEGENDARY</span>
+                                    <h3>Twilight Golem</h3>
+                                    <p>Guarding the front lines with a massive shield of twilight energy.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="troop-card-home reveal-on-scroll">
+                            <div class="troop-img-box">
+                                <img src="../assets/mystic-shaman.png" alt="Mystic Shaman" class="troop-avatar">
+                                <div class="card-gradient-shadow"></div>
+                                <div class="troop-card-info-box">
+                                    <span class="tag-troop">RARE</span>
+                                    <h3>Mystic Shaman</h3>
+                                    <p>Channeling ancient magic to empower the legion's combat potential.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column brand-info">
+                    <h3 class="footer-logo">CLASH OF BANG</h3>
+                    <p class="footer-desc">The world's premier fan community dedicated to the evolution of the legion and elite strategy.</p>
+                </div>
+                <div class="footer-column quick-links-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <div class="links-row">
+                        <a href="home.html">Home</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="troops.html">Troops</a>
+                        <a href="about.html">About</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                </div>
+                <div class="footer-column social-media-col">
+                    <h4 class="footer-heading">Our Social Media</h4>
+                    <div class="social-icons">
+                        <a href="https://discord.com/" class="social-icon-wrapper"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon-wrapper"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/en/" class="social-icon-wrapper"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://x.com/" class="social-icon-wrapper"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/" class="social-icon-wrapper"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Clash of BaNG. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>
